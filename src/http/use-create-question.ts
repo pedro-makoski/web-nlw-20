@@ -66,9 +66,5 @@ export function useCreateQuestion(roomId: string) {
                 queryClient.setQueryData<GetRoomQuestionsResponse>(['get-questions', roomId], context.questions )
             }
         },
-
-        // onSuccess: () => {
-        //     queryClient.invalidateQueries({queryKey: ["get-questions", roomId]})
-        // }
     })
 }
